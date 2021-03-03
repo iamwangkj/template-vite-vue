@@ -1,10 +1,6 @@
 <template>
   <div class="section">
     <div class="section-title">亮点</div>
-    <div class="lightspot">
-      <p>亮点1</p>
-      <!-- <img class="img" :src="img1"/> -->
-    </div>
   </div>
 </template>
 
@@ -16,6 +12,7 @@ export default defineComponent({
   setup (props) {},
   data () {
     return {
+
     }
   }
 })

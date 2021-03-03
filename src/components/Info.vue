@@ -6,7 +6,7 @@
     <div class="div">材质：S925银+猫眼石</div>
     <div class="div">链长：40cm+5cm（调节）</div>
     <div class="div">包装：标准包装、送礼包装</div>
-    <img class="img" :src="img1" alt="" />
+    <!-- <img class="img" :src="img1" alt="" /> -->
   </div>
 </template>
 
@@ -35,7 +35,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.img {
-  width: 100%;
-}
 </style>
