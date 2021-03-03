@@ -26,24 +26,12 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import img1 from '../assets/chicun1.png'
 
 export default defineComponent({
-  props: {
-    msg: {
-      type: String,
-      required: true
-    }
-  },
-  setup (props) {
-    console.log('传入新的参数setup=', props)
-    const count = ref(0)
-    return { count }
-  },
+  props: {},
+  setup (props) {},
   data () {
-    return {
-      img1: img1
-    }
+    return {}
   }
 })
 </script>
