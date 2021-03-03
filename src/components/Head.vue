@@ -1,6 +1,6 @@
 <template>
   <div class="section head">
-    <div class="title-cn">花芯</div>
+    <div class="title-cn">鱼生有你</div>
     <div class="sku"></div>
     <div class="circle1">灵动</div>
     <div class="circle2">闪耀</div>

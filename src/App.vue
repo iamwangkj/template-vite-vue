@@ -1,7 +1,6 @@
 <template>
   <div class="app">
     <button @click="generate">生成</button>
-
     <div ref="img0">
       <Head />
     </div>
@@ -9,11 +8,11 @@
       <Info />
     </div>
     <div ref="img2">
-      <Lightspot />
+      <Show />
     </div>
     <!-- 以下是预览图片 -->
     <div class="preview">
-      <h1>以下是预览图片</h1>
+      <p>以下是预览图片</p>
       <a :href="imgUrl0" download="0" class="part-img-wrapper"><img :src="imgUrl0" /></a>
       <a :href="imgUrl1" download="1" class="part-img-wrapper"><img :src="imgUrl1" /></a>
       <a :href="imgUrl2" download="2" class="part-img-wrapper"><img :src="imgUrl2" /></a>
@@ -26,14 +25,14 @@ import { defineComponent } from 'vue'
 import html2canvas from 'html2canvas'
 import Head from './components/Head.vue'
 import Info from './components/Info.vue'
-import Lightspot from './components/Lightspot.vue'
+import Show from './components/Show.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
     Head,
     Info,
-    Lightspot
+    Show
   },
   data () {
     return {
@@ -74,7 +73,9 @@ export default defineComponent({
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
+  /* color: #664943; */
   font-size: 24px;
+  text-shadow: 2px 2px 1px #d6d6d6;
   /* background: linear-gradient(to right, pink, white); */
 }
 
