@@ -1,5 +1,5 @@
 <template>
-  <div class="info">
+  <div class="section info">
     <!-- <div class="section-title">产品参数</div> -->
     <div class="row">
       <div class="label">品牌:</div>
@@ -16,10 +16,6 @@
     <div class="row">
       <div class="label">链长:</div>
       <div class="val">40cm+5cm(可调节)</div>
-    </div>
-    <div class="row">
-      <div class="label">包装:</div>
-      <div class="val">标准包装、送礼包装</div>
     </div>
   </div>
 </template>

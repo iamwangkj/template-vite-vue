@@ -1,9 +1,9 @@
 <template>
   <div class="section head">
-    <div class="title-cn">鱼生有你</div>
+    <div class="title-cn">{{title}}</div>
     <div class="sku"></div>
-    <div class="circle1">灵动</div>
-    <div class="circle2">闪耀</div>
+    <div class="circle circle1">{{text1}}</div>
+    <div class="circle circle2">{{text2}}</div>
   </div>
 </template>
 
@@ -11,7 +11,20 @@
 import { ref, defineComponent } from 'vue'
 
 export default defineComponent({
-  props: {},
+  props: {
+    title: {
+      type: String,
+      default: '花芯'
+    },
+    text1: {
+      type: String,
+      default: '灵动'
+    },
+    text2: {
+      type: String,
+      default: '闪耀'
+    }
+  },
   setup (props) {},
   data () {
     return {
@@ -30,7 +43,7 @@ export default defineComponent({
 }
 
 .title-cn {
-  /* background: linear-gradient(to right, #733c2f, #e78162); */
+  /* background: linear-gradient(to right, #fadcca, #e78162); */
   color: #c97861;
   font-size: 42px;
   text-align: center;
@@ -39,23 +52,29 @@ export default defineComponent({
 }
 
 .sku {
-  width: 626px;
-  height: 626px;
-  background: url('../imgs/head1.png') center/contain no-repeat;
+  width: 500px;
+  height: 500px;
+  background: url('../imgs/d0.png') center bottom/cover no-repeat;
   margin: 0 auto;
-  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
+  top: 200px;
+}
+
+.circle {
+  background: url('../assets/icon-circle.png') center/cover no-repeat;
+  color: #e78162;
+  text-align: center;
 }
 
 .circle1 {
   width: 168px;
   height: 155px;
-  background: url('../assets/icon-circle.png') center/cover no-repeat;
   line-height: 155px;
   color: #e78162;
-  text-align: center;
   font-size: 40px;
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 438px;
 }
 
@@ -64,8 +83,6 @@ export default defineComponent({
   height: 116px;
   line-height: 116px;
   background: url('../assets/icon-circle.png') center/cover no-repeat;
-  color: #e78162;
-  text-align: center;
   font-size: 36px;
   position: absolute;
   left: 540px;

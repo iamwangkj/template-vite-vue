@@ -1,5 +1,5 @@
 <template>
-  <div class="detail">
+  <div class="section detail">
     <div class="container">
       <!-- l1 -->
       <div class="row">
@@ -9,15 +9,15 @@
           </div>
         </div>
         <div class="text-wrapper">
-          <div class="lightspot">阿斯蒂芬安抚</div>
-          <div class="desc">撒旦法司法所发送到发送到发送到发斯蒂芬</div>
+          <div class="lightspot">精湛抛光技术</div>
+          <div class="desc">多层抗氧化电镀工艺反复打磨雕琢，不但可以保护银质，而且可以增添光亮</div>
         </div>
       </div>
       <!-- l2 -->
       <div class="row">
         <div class="text-wrapper">
-          <div class="lightspot">阿斯蒂芬安抚</div>
-          <div class="desc">撒旦法司法所发送到发送到发送到发斯蒂芬</div>
+          <div class="lightspot">S925银材质</div>
+          <div class="desc">采用S925银材质，亲肤舒适，不易过敏，不易氧化</div>
         </div>
         <div class="bg-circle">
           <div class="bg-white">
@@ -33,8 +33,8 @@
         <div class="img2-wrapper">
           <div class="img"></div>
         </div>
-        <div class="img3-wrapper">
-          <div class="img"></div>
+        <div class="img2-wrapper">
+          <div class="img2"></div>
         </div>
       </div>
     </div>
@@ -79,25 +79,28 @@ export default defineComponent({
   height: 400px;
   background: #fff5eb;
   border-radius: 50%;
+  position: relative;
   .bg-white {
     width: 100%;
     height: 100%;
     background: #fff;
     border-radius: 50%;
-    margin-left: -20px;
-    margin-top: -20px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
     .img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      margin-left: -20px;
-      margin-top: -20px;
+      position: absolute;
+      left: -20px;
+      top: -20px;
     }
     .d1 {
-      background: url("../imgs/detail1.jpg") center/cover no-repeat;
+      background: url("../imgs/d1.jpg") center/cover no-repeat;
     }
     .d2 {
-      background: url("../imgs/detail2.jpg") center/cover no-repeat;
+      background: url("../imgs/d2.jpg") center/cover no-repeat;
     }
   }
 }
@@ -107,7 +110,7 @@ export default defineComponent({
   .lightspot {
     color: #844d38;
     font-size: 34px;
-    font-style: italic;
+    // font-style: italic;
     line-height: 2;
   }
   .desc {
@@ -123,11 +126,11 @@ export default defineComponent({
   background-color: #fff;
   padding: 10px;
   box-shadow: 5px 5px 10px #999;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   .img {
     width: 100%;
     height: 100%;
-    background: url("../imgs/model1.jpg") center/cover no-repeat;
+    background: url("../imgs/d3.jpg") center/cover no-repeat;
   }
 }
 
@@ -138,29 +141,21 @@ export default defineComponent({
 
 .img2-wrapper {
   box-sizing: border-box;
-  width: 448px;
-  height: 500px;
+  width: 340px;
+  height: 440px;
   background-color: #fff;
   padding: 10px;
   box-shadow: 5px 5px 10px #999;
   .img {
     width: 100%;
     height: 100%;
-    background: url("../imgs/model2.jpg") center/cover no-repeat;
+    background: url("../imgs/d4.jpg") center/cover no-repeat;
+  }
+  .img2 {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/d5.jpg") center/cover no-repeat;
   }
 }
 
-.img3-wrapper {
-  box-sizing: border-box;
-  width: 230px;
-  height: 350px;
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 5px 5px 10px #999;
-  .img {
-    width: 100%;
-    height: 100%;
-    background: url("../imgs/model3.jpg") center/cover no-repeat;
-  }
-}
 </style>
