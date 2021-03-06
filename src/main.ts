@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './model1/App.vue'
+import App from './model-jianyue/App.vue'
 
 createApp(App).mount('#app')
