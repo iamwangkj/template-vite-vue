@@ -41,7 +41,7 @@ export default defineComponent({
 .sku {
   width: 626px;
   height: 626px;
-  background: url('../assets/sku1.png') center/contain no-repeat;
+  background: url('../imgs/head1.png') center/contain no-repeat;
   margin: 0 auto;
   padding-top: 100px;
 }

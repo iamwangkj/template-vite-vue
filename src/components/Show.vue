@@ -94,10 +94,10 @@ export default defineComponent({
       margin-top: -20px;
     }
     .d1 {
-      background: url("../assets/d1.jpg") center/cover no-repeat;
+      background: url("../imgs/detail1.jpg") center/cover no-repeat;
     }
     .d2 {
-      background: url("../assets/d2.jpg") center/cover no-repeat;
+      background: url("../imgs/detail2.jpg") center/cover no-repeat;
     }
   }
 }
@@ -127,7 +127,7 @@ export default defineComponent({
   .img {
     width: 100%;
     height: 100%;
-    background: url("../assets/m1.jpg") center/cover no-repeat;
+    background: url("../imgs/model1.jpg") center/cover no-repeat;
   }
 }
 
@@ -146,7 +146,7 @@ export default defineComponent({
   .img {
     width: 100%;
     height: 100%;
-    background: url("../assets/m2.jpg") center/cover no-repeat;
+    background: url("../imgs/model2.jpg") center/cover no-repeat;
   }
 }
 
@@ -160,7 +160,7 @@ export default defineComponent({
   .img {
     width: 100%;
     height: 100%;
-    background: url("../assets/m3.jpg") center/cover no-repeat;
+    background: url("../imgs/model3.jpg") center/cover no-repeat;
   }
 }
 </style>
